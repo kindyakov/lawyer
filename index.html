@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230906001832">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230908004251">
 </head>
 
 <body>
@@ -24,11 +24,12 @@
 					</svg>
 					+7 (918) 355-50-23
 				</a>
-				<a href="" class="header__call">Обратный звонок</a>
+				<a href="tel:79183555023" class="header__call">Обратный звонок</a>
 			</div>
 		</div>
 	</div>
 </header>
+
 		<main class="page">
 			<section class="intro">
 				<div class="intro__container _container">
@@ -85,7 +86,7 @@
 							<span class="promo__text">Чем раньше вы обратитесь, тем больше возможностей для Вашей победы в
 								суде.</span>
 						</div>
-						<a href="#analysis-1" class="promo__link link">Узнать</a>
+						<button class="promo__link link modal-btn-active">Узнать</button>
 					</div>
 				</div>
 			</div>
@@ -152,7 +153,7 @@
 						<p class="guarantee__subtitle">Если результат не в Вашу пользу - подготовлю жалобу
 							в вышестоящий суд без дополнительной оплаты</p>
 					</div>
-					<form class="guarantee__form" data-form="analysis" id="analysis-1">
+					<form class="guarantee__form" data-form="analysis" data-formId="1">
 						<h4 class="guarantee__form-title">Проведу подробный разбор ситуации. Изучу документы.
 							Честно обозначу наиболее благоприятный исход.</h4>
 						<div class="guarantee__form-block">
@@ -163,12 +164,18 @@
 								<input type="tel" name="phone" class="guarantee__form-input input" placeholder="Телефон"
 									inputmode="tel">
 							</div>
+							<input type="text" name="name-form" value="Получить анализ" style="display: none;">
 							<div class="guarantee__form-wpButton wpButton">
-								<button type="submit" class="guarantee__form-button button">Получить анализ</button>
+								<button type="submit" class="guarantee__form-button button">
+									<span class="text">Получить анализ</span>
+									<div class="wp-loader">
+										<span class="loader"></span>
+									</div>
+								</button>
 								<div class="wpButton__check">
 									<label class="label">
-										<input type="checkbox" id="check-1">
-										<label for="check-1" class="label-check">✓</label>
+										<input type="checkbox" id="check-1" checked>
+										<label for="check-1" class="label-check"></label>
 									</label>
 									<span>Нажимая кнопку, соглашаюсь с политикой конфиденциальности и обработкой персональных
 										данных</span>
@@ -239,7 +246,7 @@
 							<span class="promo__text">При отсутствии шансов - открыто об этом говорю и не берусь за дело. Таким
 								образом не трачу зря Ваши время и деньги.</span>
 						</div>
-						<a href="#analysis-2" class="promo__link link">Получить анализ</a>
+						<button class="promo__link link modal-btn-active-2">Получить анализ</button>
 					</div>
 				</div>
 			</div>
@@ -302,7 +309,7 @@
 			</section>
 
 			<div class="analysis-wpForm">
-				<form class="guarantee__form" data-form="analysis" id="analysis-2">
+				<form class="guarantee__form" data-form="analysis" data-formId="2">
 					<h2 class="h2">Полностью лично веду Ваше дело,</h2>
 					<span class="guarantee__span-form">а не поручаю начинающему помощнику.</span>
 					<div class="guarantee__form-block">
@@ -312,12 +319,18 @@
 						<div class="guarantee__form-wpInput wpInput">
 							<input type="tel" name="phone" class="guarantee__form-input input" placeholder="Телефон" inputmode="tel">
 						</div>
+						<input type="text" name="name-form" value="Получить анализ" style="display: none;">
 						<div class="guarantee__form-wpButton wpButton">
-							<button type="submit" class="guarantee__form-button button">Получить анализ</button>
+							<button type="submit" class="guarantee__form-button button">
+								<span class="text">Получить анализ</span>
+								<div class="wp-loader">
+									<span class="loader"></span>
+								</div>
+							</button>
 							<div class="wpButton__check">
 								<label class="label">
-									<input type="checkbox" id="check-2">
-									<label for="check-2" class="label-check">✓</label>
+									<input type="checkbox" id="check-2" checked>
+									<label for="check-2" class="label-check"></label>
 								</label>
 								<span>Нажимая кнопку, соглашаюсь с политикой конфиденциальности и обработкой персональных
 									данных</span>
@@ -327,6 +340,7 @@
 				</form>
 			</div>
 		</main>
+
 		<footer class="footer">
 	<div class="footer__container _container">
 		<div class="footer__top">
@@ -343,7 +357,7 @@
 			</div>
 			<div class="footer__row">
 				<a href="tel:79183555023" class="footer__tel">+7 (918) 355-50-23</a>
-				<a href="" class="footer__link link">Позвонить</a>
+				<button class="footer__link link modal-btn-active">Позвонить</button>
 			</div>
 		</div>
 		<div class="footer__bottom">
@@ -354,7 +368,109 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20230906001832"></script>
+	<span class="output-info"></span>
+
+	<div class="modal modal-zvonok">
+	<div class="modal__content">
+		<div class="modal__body">
+			<form class="modal__form" data-form="zvonok" data-formId="3">
+				<h4 class="modal__title">Заполните поля ниже</h4>
+				<span class="modal__subtitle">и Я свяжусь с Вами, в ближайшее время</span>
+				<div class="modal__col">
+					<div class="modal__wpInput wpInput">
+						<input type="text" name="name" class="modal__input input" placeholder="Имя">
+					</div>
+					<div class="modal__wpInput wpInput">
+						<input type="tel" name="phone" class="modal__input input" placeholder="Телефон" inputmode="tel">
+					</div>
+					<input type="text" name="name-form" value="Обратный звонок" style="display: none;">
+					<div class="modal__wpButton wpButton">
+						<button type="submit" class="modal__button button">
+							<span class="text">Перезвонить мне</span>
+							<div class="wp-loader">
+								<span class="loader"></span>
+							</div>
+						</button>
+						<div class="wpButton__check">
+							<label class="label">
+								<input type="checkbox" id="check-3" checked>
+								<label for="check-3" class="label-check"></label>
+							</label>
+							<span>Нажимая кнопку, соглашаюсь с политикой конфиденциальности и обработкой персональных
+								данных</span>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="modal__close">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal-analysis">
+	<div class="modal__content">
+		<div class="modal__body">
+			<form class="modal__form" data-form="analysis" data-formId="4">
+				<h4 class="modal__title">Заполните поля ниже</h4>
+				<span class="modal__subtitle">и Я свяжусь с Вами, в ближайшее время</span>
+				<div class="modal__col">
+					<div class="modal__wpInput wpInput">
+						<input type="text" name="name" class="modal__input input" placeholder="Имя">
+					</div>
+					<div class="modal__wpInput wpInput">
+						<input type="tel" name="phone" class="modal__input input" placeholder="Телефон" inputmode="tel">
+					</div>
+					<input type="text" name="name-form" value="Получить анализ" style="display: none;">
+					<div class="modal__wpButton wpButton">
+						<button type="submit" class="modal__button button">
+							<span class="text">Получить анализ</span>
+							<div class="wp-loader">
+								<span class="loader"></span>
+							</div>
+						</button>
+						<div class="wpButton__check">
+							<label class="label">
+								<input type="checkbox" id="check-4" checked>
+								<label for="check-4" class="label-check"></label>
+							</label>
+							<span>Нажимая кнопку, соглашаюсь с политикой конфиденциальности и обработкой персональных
+								данных</span>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="modal__close">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(94855048, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><picture><source srcset="https://mc.yandex.ru/watch/94855048" type="image/webp"><img src="https://mc.yandex.ru/watch/94855048" style="position:absolute; left:-9999px;" alt="" /></picture></div>
+	</noscript>
+	<!-- Yandex.Metrika counter -->
+	<script src="js/app.min.js?_v=20230908004251"></script>
 </body>
 
 </html>
