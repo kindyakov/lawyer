@@ -6,7 +6,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230908004251">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230909140735" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230909140735">
 </head>
 
 <body>
@@ -14,9 +15,9 @@
 		<header class="header">
 	<div class="header__container _container">
 		<div class="header__body">
-			<h4 class="header__title">Исматова <br>судебный юрист</h4>
+			<h4 class="header__title" data-aos="fade-right">Исматова <br>судебный юрист</h4>
 			<div class="header__contacts">
-				<a href="tel:79183555023" class="header__tell underline">
+				<a href="tel:79183555023" class="header__tell underline" data-aos="fade-down">
 					<svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M5.63111 12.1178C7.87111 16.52 11.48 20.1133 15.8822 22.3689L19.3044 18.9467C19.7244 18.5267 20.3467 18.3867 20.8911 18.5733C22.6333 19.1489 24.5156 19.46 26.4444 19.46C27.3 19.46 28 20.16 28 21.0156V26.4444C28 27.3 27.3 28 26.4444 28C11.8378 28 0 16.1622 0 1.55556C0 0.7 0.7 0 1.55556 0H7C7.85556 0 8.55556 0.7 8.55556 1.55556C8.55556 3.5 8.86667 5.36667 9.44222 7.10889C9.61333 7.65333 9.48889 8.26 9.05333 8.69556L5.63111 12.1178Z"
@@ -24,7 +25,7 @@
 					</svg>
 					+7 (918) 355-50-23
 				</a>
-				<a href="tel:79183555023" class="header__call">Обратный звонок</a>
+				<button class="header__call modal-btn-active" data-aos="fade-left">Обратный звонок</button>
 			</div>
 		</div>
 	</div>
@@ -35,28 +36,29 @@
 				<div class="intro__container _container">
 					<div class="intro__body">
 						<div class="intro__content">
-							<h1 class="intro__title">Исматова<br> Лола Гайратовна</h1>
-							<span class="intro__subtitle">СУДЕБНЫЙ ЮРИСТ C ОПЫТОМ РАБОТЫ ФЕДЕРАЛЬНЫМ СУДЬЕЙ</span>
+							<h1 class="intro__title" data-aos="fade-right">Исматова<br> Лола Гайратовна</h1>
+							<span class="intro__subtitle" data-aos="fade-right" data-aos-delay="50">СУДЕБНЫЙ ЮРИСТ C ОПЫТОМ РАБОТЫ
+								ФЕДЕРАЛЬНЫМ СУДЬЕЙ</span>
 							<ul class="intro__list">
-								<li class="intro__item">
+								<li class="intro__item" data-aos="zoom-in" data-aos-delay="50">
 									<div class="intro__item-wpImg">
 										<picture><source srcset="img/icons/intro-icon-1.webp" type="image/webp"><img src="img/icons/intro-icon-1.png" alt="icon" class="intro__item-icon"></picture>
 									</div>
 									<span class="intro__item-text">20 лет судебной практики</span>
 								</li>
-								<li class="intro__item">
+								<li class="intro__item" data-aos="zoom-in" data-aos-delay="100">
 									<div class="intro__item-wpImg">
 										<picture><source srcset="img/icons/intro-icon-2.webp" type="image/webp"><img src="img/icons/intro-icon-2.png" alt="icon" class="intro__item-icon"></picture>
 									</div>
 									<span class="intro__item-text">11 лет работала федеральным судьей</span>
 								</li>
-								<li class="intro__item">
+								<li class="intro__item" data-aos="zoom-in" data-aos-delay="0">
 									<div class="intro__item-wpImg">
 										<picture><source srcset="img/icons/intro-icon-3.webp" type="image/webp"><img src="img/icons/intro-icon-3.png" alt="icon" class="intro__item-icon"></picture>
 									</div>
 									<span class="intro__item-text">Гарантирую 100% законность судебного решения</span>
 								</li>
-								<li class="intro__item">
+								<li class="intro__item" data-aos="zoom-in" data-aos-delay="50">
 									<div class="intro__item-wpImg">
 										<picture><source srcset="img/icons/intro-icon-4.webp" type="image/webp"><img src="img/icons/intro-icon-4.png" alt="icon" class="intro__item-icon"></picture>
 									</div>
@@ -64,8 +66,9 @@
 								</li>
 							</ul>
 						</div>
-						<div class="intro__wpImg" data-da=".intro__content,1199,2">
-							<picture><source srcset="img/intro-1.webp" type="image/webp"><img src="img/intro-1.png" class="intro__img" alt="Картинка"></picture>
+						<div class="intro__wpImg" data-da=".intro__content,1199,2" data-aos="fade-left" data-aos-delay="50"
+							data-aos-duration="500">
+							<picture><source srcset="img/intro-2.webp" type="image/webp"><img src="img/intro-2.png" class="intro__img" alt="Картинка"></picture>
 							<div class="intro__blur">
 								<div class="intro__blur-wpImg">
 									<picture><source srcset="img/icons/intro-icon-5.webp" type="image/webp"><img src="img/icons/intro-icon-5.png" alt="icon"></picture>
@@ -81,12 +84,14 @@
 				<div class="promo__container _container">
 					<div class="promo__body">
 						<div class="promo__block">
-							<h4 class="promo__title"><mark>Узнайте</mark> прямо сейчас <mark>эффективный способ</mark>
+							<h4 class="promo__title" data-aos="fade-down"><mark>Узнайте</mark> прямо сейчас <mark>эффективный
+									способ</mark>
 								закончить дело в Ваших интересах.</h4>
-							<span class="promo__text">Чем раньше вы обратитесь, тем больше возможностей для Вашей победы в
+							<span class="promo__text" data-aos="fade-up">Чем раньше вы обратитесь, тем больше возможностей для Вашей
+								победы в
 								суде.</span>
 						</div>
-						<button class="promo__link link modal-btn-active">Узнать</button>
+						<button class="promo__link link modal-btn-active" data-aos="zoom-in">Узнать</button>
 					</div>
 				</div>
 			</div>
@@ -94,11 +99,11 @@
 			<section class="info">
 				<div class="info__container _container">
 					<div class="info__body">
-						<h2 class="info__title h2">Знаю как принимаются решения в суде.<br>
+						<h2 class="info__title h2" data-aos="fade-right">Знаю как принимаются решения в суде.<br>
 							<mark>11 лет работала федеральным судьей.</mark>
 						</h2>
 						<div class="info__content">
-							<div class="info__wpImg">
+							<div class="info__wpImg" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500">
 								<picture>
 									<source srcset="img/noimg_phone.png" type="image/png" media="(max-width:565px)">
 									<img src="img/noimg.png" alt="Картинка" class="info__img">
@@ -110,19 +115,19 @@
 									Можно выиграть даже самое сложное дело, если правильно подготовиться к суду:
 								</div>
 								<ul class="info__list">
-									<li class="info__item">
+									<li class="info__item" data-aos="fade-left" data-aos-delay="0">
 										<span class="info__list-number">1</span>
 										<p class="info__list-text">Выработана правильная стратегия по делу;</p>
 									</li>
-									<li class="info__item">
+									<li class="info__item" data-aos="fade-left" data-aos-delay="25">
 										<span class="info__list-number">2</span>
 										<p class="info__list-text">В нужный момент заявлены правильные аргументы и доказательства;</p>
 									</li>
-									<li class="info__item">
+									<li class="info__item" data-aos="fade-left" data-aos-delay="50">
 										<span class="info__list-number">3</span>
 										<p class="info__list-text">Заранее готовы ответы на все возможные вопросы суда и оппонента;</p>
 									</li>
-									<li class="info__item">
+									<li class="info__item" data-aos="fade-left" data-aos-delay="75">
 										<span class="info__list-number">4</span>
 										<p class="info__list-text">Суду представлена готовая позиция, подтвержденная судебными прецедентами.
 										</p>
@@ -130,7 +135,7 @@
 								</ul>
 							</div>
 						</div>
-						<blockquote class="info__ps">
+						<blockquote class="info__ps" data-aos="fade-up">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 33">
 								<path
 									d="M0 22.567C0 15.1959 4.61972 7.37113 11.0423 0L13.4085 1.92783C8.33803 8.16494 4.73239 14.6289 4.73239 19.732C4.73239 21.2062 4.84507 22.1134 5.29577 23.4742L14.5352 27.3299C13.8592 30.0515 11.9437 33 10.0282 33C5.29577 33 0 28.9175 0 22.567ZM17.4648 22.567C17.4648 15.1959 22.0845 7.37113 28.507 0L30.8732 1.92783C25.8028 8.16494 22.1972 14.6289 22.1972 19.732C22.1972 21.2062 22.3099 22.1134 22.7606 23.4742L32 27.3299C31.3239 30.0515 29.4084 33 27.493 33C22.7606 33 17.4648 28.9175 17.4648 22.567Z" />
@@ -149,24 +154,30 @@
 			<section class="guarantee">
 				<div class="guarantee__body">
 					<div class="guarantee__content">
-						<h2 class="guarantee__title h2"><mark>Гарантирую 100%</mark><br> законность судебного решения</h2>
-						<p class="guarantee__subtitle">Если результат не в Вашу пользу - подготовлю жалобу
+						<h2 class="guarantee__title h2" data-aos="fade-down"><mark>Гарантирую 100%</mark><br> законность судебного
+							решения</h2>
+						<p class="guarantee__subtitle" data-aos="zoom-in" data-aos-delay="25">Если результат не в Вашу пользу -
+							подготовлю жалобу
 							в вышестоящий суд без дополнительной оплаты</p>
 					</div>
 					<form class="guarantee__form" data-form="analysis" data-formId="1">
-						<h4 class="guarantee__form-title">Проведу подробный разбор ситуации. Изучу документы.
+						<h4 class="guarantee__form-title" data-aos="zoom-in" data-aos-delay="50">Проведу подробный разбор ситуации.
+							Изучу документы.
 							Честно обозначу наиболее благоприятный исход.</h4>
 						<div class="guarantee__form-block">
-							<div class="guarantee__form-wpInput wpInput">
+							<div class="guarantee__form-wpInput wpInput" data-aos="flip-up" data-aos-delay="100"
+								data-aos-duration="800">
 								<input type="text" name="name" class="guarantee__form-input input" placeholder="Имя">
 							</div>
-							<div class="guarantee__form-wpInput wpInput">
+							<div class="guarantee__form-wpInput wpInput" data-aos="flip-up" data-aos-delay="150"
+								data-aos-duration="800">
 								<input type="tel" name="phone" class="guarantee__form-input input" placeholder="Телефон"
 									inputmode="tel">
 							</div>
 							<input type="text" name="name-form" value="Получить анализ" style="display: none;">
 							<div class="guarantee__form-wpButton wpButton">
-								<button type="submit" class="guarantee__form-button button">
+								<button type="submit" class="guarantee__form-button button" data-aos="flip-up" data-aos-delay="200"
+									data-aos-duration="800">
 									<span class="text">Получить анализ</span>
 									<div class="wp-loader">
 										<span class="loader"></span>
@@ -189,49 +200,68 @@
 			<section class="skills">
 				<div class="skills__conteiner _container">
 					<div class="skills__body">
-						<h2 class="skills__title h2">Специализируюсь на гражданских делах</h2>
-						<p class="skills__subtitle">20 лет судебной практики, в том числе 11 в качестве федерального судьи.</p>
+						<h2 class="skills__title h2" data-aos="fade-right">Специализируюсь на гражданских делах</h2>
+						<p class="skills__subtitle" data-aos="zoom-in" data-aos-delay="50">20 лет судебной практики, в том числе 11
+							в качестве федерального судьи.</p>
 						<div class="skills__content">
 							<div class="skills__content-block">
 								<div class="skills__content-head">
-									<h5 class="skills__content-title">Семейные и наследственные споры</h5>
+									<h5 class="skills__content-title" data-aos="fade-down">Семейные и наследственные споры</h5>
 								</div>
 								<ul class="skills__content-list">
-									<li class="skills__content-li">раздел имущества, в том числе в ипотеке;</li>
-									<li class="skills__content-li">раздел кредитных обязательств;</li>
-									<li class="skills__content-li">раздел бизнеса;</li>
-									<li class="skills__content-li">споры о воспитании детей;</li>
-									<li class="skills__content-li">оспаривание брачного контракта;</li>
-									<li class="skills__content-li">наследование, оспаривание завещания и др.</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="50">раздел имущества, в том числе
+										в
+										ипотеке;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="75">раздел кредитных обязательств;
+									</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="100">раздел бизнеса;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="125">споры о воспитании детей;
+									</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="150">оспаривание брачного
+										контракта;
+									</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="175">наследование, оспаривание
+										завещания и др.</li>
 								</ul>
-								<a href="" class="skills__content-link link">Обратиться</a>
+								<button class="skills__content-link link modal-btn-active" data-aos="fade-up"
+									data-aos-delay="50">Обратиться</button>
 							</div>
 							<div class="skills__content-block">
 								<div class="skills__content-head">
-									<h5 class="skills__content-title">Споры по самовольным постройкам</h5>
+									<h5 class="skills__content-title" data-aos="fade-down">Споры по самовольным постройкам</h5>
 								</div>
 								<ul class="skills__content-list">
-									<li class="skills__content-li">признание права собственности на самовольную постройку;</li>
-									<li class="skills__content-li">споры с органами власти о сносе самовольной постройки;</li>
-									<li class="skills__content-li">споры с органами власти о приведении постройки в соответствие или
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="50">признание права собственности
+										на самовольную постройку;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="75">споры с органами власти о
+										сносе самовольной постройки;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="100">споры с органами власти о
+										приведении постройки в соответствие или
 										запрете эксплуатации;</li>
-									<li class="skills__content-li">споры со смежным владельцем и др.</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="125">споры со смежным владельцем и
+										др.</li>
 								</ul>
-								<a href="" class="skills__content-link link">Обратиться</a>
+								<button class="skills__content-link link modal-btn-active" data-aos="fade-up"
+									data-aos-delay="50">Обратиться</button>
 							</div>
 							<div class="skills__content-block">
 								<div class="skills__content-head">
-									<h5 class="skills__content-title">Земельные споры</h5>
+									<h5 class="skills__content-title" data-aos="fade-down">Земельные споры</h5>
 								</div>
 								<ul class="skills__content-list">
-									<li class="skills__content-li">признание права собственности на земельный участок;</li>
-									<li class="skills__content-li">установление границ;</li>
-									<li class="skills__content-li">споры о назначении земельного участка;</li>
-									<li class="skills__content-li">сервитут;</li>
-									<li class="skills__content-li">определение порядка пользования;</li>
-									<li class="skills__content-li">споры по кадастровой стоимости и др.</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="50">признание права собственности
+										на земельный участок;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="75">установление границ;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="100">споры о назначении земельного
+										участка;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="125">сервитут;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="150">определение порядка
+										пользования;</li>
+									<li class="skills__content-li" data-aos="fade-left" data-aos-delay="175">споры по кадастровой
+										стоимости и др.</li>
 								</ul>
-								<a href="" class="skills__content-link link">Обратиться</a>
+								<button class="skills__content-link link modal-btn-active" data-aos="fade-up"
+									data-aos-delay="50">Обратиться</button>
 							</div>
 						</div>
 					</div>
@@ -242,11 +272,14 @@
 				<div class="promo__container _container">
 					<div class="promo__body">
 						<div class="promo__block">
-							<h4 class="promo__title">Оцениваю <mark>реальную перспективу</mark> по Вашему делу</h4>
-							<span class="promo__text">При отсутствии шансов - открыто об этом говорю и не берусь за дело. Таким
+							<h4 class="promo__title" data-aos="fade-right">Оцениваю <mark>реальную перспективу</mark> по Вашему делу
+							</h4>
+							<span class="promo__text" data-aos="fade-right" data-aos-delay="50">При отсутствии шансов - открыто об
+								этом говорю и не берусь за дело. Таким
 								образом не трачу зря Ваши время и деньги.</span>
 						</div>
-						<button class="promo__link link modal-btn-active-2">Получить анализ</button>
+						<button class="promo__link link modal-btn-active-2" data-aos="fade-left" data-aos-delay="100">Получить
+							анализ</button>
 					</div>
 				</div>
 			</div>
@@ -254,50 +287,50 @@
 			<section class="about">
 				<div class="about__container _container">
 					<div class="about__body">
-						<h2 class="about__title h2"><mark>Более 20 лет</mark> судебной практики</h2>
+						<h2 class="about__title h2" data-aos="fade-right"><mark>Более 20 лет</mark> судебной практики</h2>
 						<div class="about__content">
-							<div class="about__wpImg">
+							<div class="about__wpImg" data-aos="fade-right" data-aos-delay="50" data-aos-duration="600">
 								<picture><source srcset="img/about.webp" type="image/webp"><img src="img/about.png" alt="Картинка"></picture>
 								<div class="about__wpImg-fio">Исматова Лола Гайратовна</div>
 							</div>
 							<ul class="about__list">
 								<li class="about__item">
-									<div class="about__item-top">
+									<div class="about__item-top" data-aos="zoom-in">
 										<picture><source srcset="img/icons/about-icon-1.webp" type="image/webp"><img src="img/icons/about-icon-1.png" alt="icon"></picture>
 										<span class="about__item-date">1995-2003 г.г.</span>
 									</div>
-									<div class="about__item-bottom">
+									<div class="about__item-bottom" data-aos="fade-left" data-aos-delay="50">
 										<p class="about__item-text"><b>Преподаватель кафедры гражданского права УдГУ.</b><br>
 											Преподавала гражданское, финансовое право, гражданское процессуальное право.</p>
 									</div>
 								</li>
 								<li class="about__item">
-									<div class="about__item-top">
+									<div class="about__item-top" data-aos="zoom-in" data-aos-delay="75">
 										<picture><source srcset="img/icons/about-icon-2.webp" type="image/webp"><img src="img/icons/about-icon-2.png" alt="icon"></picture>
 										<span class="about__item-date">2003-2014г.г.</span>
 									</div>
-									<div class="about__item-bottom">
+									<div class="about__item-bottom" data-aos="fade-left" data-aos-delay="100">
 										<p class="about__item-text"><b>Работа федеральным судьей.</b><br>
 											Специализация: гражданские, земельные, семейные, наследственные, трудовые и административные дела.
 										</p>
 									</div>
 								</li>
 								<li class="about__item">
-									<div class="about__item-top">
+									<div class="about__item-top" data-aos="zoom-in" data-aos-delay="125">
 										<picture><source srcset="img/icons/about-icon-3.webp" type="image/webp"><img src="img/icons/about-icon-3.png" alt="icon"></picture>
 										<span class="about__item-date">2014-2021г.г.</span>
 									</div>
-									<div class="about__item-bottom">
+									<div class="about__item-bottom" data-aos="fade-left" data-aos-delay="150">
 										<p class="about__item-text"><b>Судебная практика в судах общей юрисдикции и арбитражных судах</b>
 											Уральского и Приволжского регионов, Москвы и Московской области, а также в Верховном суде РФ.</p>
 									</div>
 								</li>
 								<li class="about__item">
-									<div class="about__item-top">
+									<div class="about__item-top" data-aos="zoom-in" data-aos-delay="175">
 										<picture><source srcset="img/icons/about-icon-4.webp" type="image/webp"><img src="img/icons/about-icon-4.png" alt="icon"></picture>
 										<span class="about__item-date">2022-2023г.г.</span>
 									</div>
-									<div class="about__item-bottom">
+									<div class="about__item-bottom" data-aos="fade-left" data-aos-delay="200">
 										<p class="about__item-text"><b>Работа в органах власти Краснодарского края.</b><br>
 											Муниципальный советник третьего класса.</p>
 									</div>
@@ -310,18 +343,19 @@
 
 			<div class="analysis-wpForm">
 				<form class="guarantee__form" data-form="analysis" data-formId="2">
-					<h2 class="h2">Полностью лично веду Ваше дело,</h2>
-					<span class="guarantee__span-form">а не поручаю начинающему помощнику.</span>
+					<h2 class="h2" data-aos="fade-right">Полностью лично веду Ваше дело,</h2>
+					<span class="guarantee__span-form" data-aos="zoom-in" data-aos-delay="50">а не поручаю начинающему
+						помощнику.</span>
 					<div class="guarantee__form-block">
-						<div class="guarantee__form-wpInput wpInput">
+						<div class="guarantee__form-wpInput wpInput" data-aos="zoom-in-up" data-aos-delay="75">
 							<input type="text" name="name" class="guarantee__form-input input" placeholder="Имя">
 						</div>
-						<div class="guarantee__form-wpInput wpInput">
+						<div class="guarantee__form-wpInput wpInput" data-aos="zoom-in-up" data-aos-delay="100">
 							<input type="tel" name="phone" class="guarantee__form-input input" placeholder="Телефон" inputmode="tel">
 						</div>
 						<input type="text" name="name-form" value="Получить анализ" style="display: none;">
 						<div class="guarantee__form-wpButton wpButton">
-							<button type="submit" class="guarantee__form-button button">
+							<button type="submit" class="guarantee__form-button button" data-aos="zoom-in-up" data-aos-delay="125">
 								<span class="text">Получить анализ</span>
 								<div class="wp-loader">
 									<span class="loader"></span>
@@ -344,20 +378,20 @@
 		<footer class="footer">
 	<div class="footer__container _container">
 		<div class="footer__top">
-			<h2 class="footer__title">Контакты</h2>
-			<span class="solid">
+			<h2 class="footer__title" data-aos="zoom-in-right">Контакты</h2>
+			<span class="solid" data-aos="zoom-in-left">
 		</div>
 		<div class="footer__content">
 			<div class="footer__col">
-				<span class="footer__fio">Исматова Лола Гайратовна</span>
+				<span class="footer__fio" data-aos="fade-left" data-aos-delay="50">Исматова Лола Гайратовна</span>
 				<div class="footer__data">
-					<span>НПД Исматова Л.Г.</span>
-					<span>ИНН 183103313639</span>
+					<span data-aos="fade-left" data-aos-delay="75">НПД Исматова Л.Г.</span>
+					<span data-aos="fade-left" data-aos-delay="100">ИНН 183103313639</span>
 				</div>
 			</div>
 			<div class="footer__row">
-				<a href="tel:79183555023" class="footer__tel">+7 (918) 355-50-23</a>
-				<button class="footer__link link modal-btn-active">Позвонить</button>
+				<a href="tel:79183555023" class="footer__tel" data-aos="zoom-in">+7 (918) 355-50-23</a>
+				<button class="footer__link link modal-btn-active" data-aos="fade-left">Позвонить</button>
 			</div>
 		</div>
 		<div class="footer__bottom">
@@ -470,7 +504,8 @@
 		<div><picture><source srcset="https://mc.yandex.ru/watch/94855048" type="image/webp"><img src="https://mc.yandex.ru/watch/94855048" style="position:absolute; left:-9999px;" alt="" /></picture></div>
 	</noscript>
 	<!-- Yandex.Metrika counter -->
-	<script src="js/app.min.js?_v=20230908004251"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20230909140735"></script>
+<script src="js/app.min.js?_v=20230909140735"></script>
 </body>
 
 </html>
