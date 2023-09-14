@@ -1,15 +1,15 @@
 <?php
 
 $mail_settings_prod = [
-    'host' => 'smtp.beget.ru', // Хость например smtp.mail.ru
+    'host' => 'smtp.mail.ru', // Хость например smtp.mail.ru
     'auth' => true,
     'port' => 465, // 587
     'secure' => 'ssl', // tls
-    'username' => '', // Почта
-    'password' => '', // Пароль от почты
+    'username' => 'kindyakov_2016@mail.ru', // Почта
+    'password' => 'Ucwip044C1cwVmk5c99f', // Пароль от почты
     'charset' => 'UTF-8',
-    'from_email' => '', // Почта отправителя 
-    'from_name' => '',
-    'to_email' => '', // Почта получателя
+    'from_email' => 'kindyakov_2016@mail.ru', // Почта отправителя 
+    'from_name' => 'Имя',
+    'to_email' => 'kindyakov_2016@mail.ru', // Почта получателя
     'is_html' => true,
 ];
